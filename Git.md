@@ -1,38 +1,32 @@
 # Cheat Sheet
+Save: `git commit -a -m "message here"`
+- or `git commit --amend` if you want to fix the last commit (and it wasn't published)
 
-git log
-- Show commits
-- Also git log origin/main
-  - Old: " " origin/master
+Show saves ("commits"): `git log`
+- Also `git log origin/main`
 
-git stash
-- Saves current changes to current commit
-- git stash popwill apply the latest stash and remove it from list
-- git stash listwill show all stashes
+Upload online: `git push origin --all`
 
-git checkout
-- git checkout HEAD^for last commit
-	– HEAD^^or HEAD~2for two commits ago, etc
-- git checkout mainbrings you pack to the top of the branch
-	– Old: " " master
-- git checkout [commit hash]for any commit (get commit hash from git hist, GitHub, etc)
+Temporarily saves current changes: `git stash`
+- `git stash pop` will apply the latest stash and remove it from list
+- `git stash list` will show all stashes
 
-git push origin [branch name]
-- To push just one branch
-- First do git checkout [branch name]
+Open a save ("commit"): `git checkout`
+- `git checkout HEAD^` for last commit
+	– `HEAD^^or HEAD~2` for two commits ago, etc
+- `git checkout main` brings you pack to the top of the branch
+- `git checkout [commit hash]` for any commit (get commit hash from git hist, GitHub, etc)
 
-git tag [tag name]
-- Create a simple tag
+Upload just one branch: `git push origin [branch name]`
 
-git commit -a -m "message here"
-- or git commit --amendif you want to fix the last commit (and it wasn't published)
+Create a simple tag: `git tag [tag name]`
 
-git hist
+See history: `git hist`
 - At the :prompt type qto quit
 - Very helpful for moving around past commits
 - Not a native command, must be added as [alias] in .gitconfig
 
-git reflog
+Reference log: `git reflog`
 - Useful
 
 # GitHub
@@ -46,7 +40,7 @@ git reflog
 	– Since 2021.9 is done by Personal Access Token (saved in lastpass) 
 	– Seems like no file that lives on local machine, just a very long password
 
-# GitHub Desktop
+## GitHub Desktop
 - Useful, use it
 
 # Git Flow
