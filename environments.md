@@ -11,7 +11,7 @@
 |Create env from .txt            | `pip install -r requirements.txt`|
 
 
-# Tensorflow venv
+# Tensorflow
 - Anaconda (Conda) does not officially support Tensorflow, so we don't recommend it
 - Remember windows paths use the backslash \\, though powershell accepts either
 - Use pyenv to manage your python versions, rather than just using a single version of python "System-wide" 
