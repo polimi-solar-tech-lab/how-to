@@ -32,7 +32,7 @@
 
 # Mistakes/Warnings
 ## Shallow copy
-- If you create a new df you get an object with location in memory, and and assignment
+- If you create a new df and assign it a value, you get an object with location in memory
 - If you then try to copy (using =, or by passing to the argument of a function/method) that df to a new df2, you actually don't get a totally new and independent object, but a pointer to df's location in memory
 - So if you change df2, df also changes
 - This is because dataframes can be massive, and if you just need to move one into a function, you dont really want to create a new spot in memory and copy over all the values, so instead you just pass a pointer to whatever data you want the function to work on
