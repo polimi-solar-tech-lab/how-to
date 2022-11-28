@@ -31,6 +31,44 @@
 - Plotly default: `pd.options.plotting.backend = 'plotly'`
 
 # Mistakes/Warnings
+## Shallow copy
+- If you create a new df you get an object with location in memory, and and assignment
+- If you then try to copy (using =, or by passing to the argument of a function/method) that df to a new df2, you actually don't get a totally new and independent object, but a pointer to df's location in memory
+- So if you change df2, df also changes
+- This is because dataframes can be massive, and if you just need to move one into a function, you dont really want to create a new spot in memory and copy over all the values, so instead you just pass a pointer to whatever data you want the function to work on
+- Example1:
+  ```python
+  >>> df = pd.DataFrame({'a':[1,2]})
+  >>> df2 = df
+  >>> df2['b'] = [3,4]
+  >>> df
+     a  b
+  0  1  3
+  1  2  4
+  ```
+- Example2: 
+  ```python
+  >>> df = pd.DataFrame({'a':[1,2]})
+  >>> def myFun(df2):  
+  ...     df2['b'] = [3,4]
+  ...
+  >>> myFun(df)
+  >>> df
+     a  b
+  0  1  3
+  1  2  4
+  ```
+Instead do:
+  ```python
+  >>> df = pd.DataFrame({'a':[1,2]})
+  >>> df2 = df.copy(deep=True)
+  >>> df2['b'] = [3,4]
+  >>> df
+     a
+  0  1
+  1  2
+  ```
+
 ## `SettingWithCopy`
 - Don't do: `df['col']['row'] = values`
 - Not clear if value is being put into a view or copy of df (speed implication)
