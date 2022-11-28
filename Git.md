@@ -1,5 +1,5 @@
 # Cheat Sheet
-Save: `git commit -a -m "message here"`
+Save ("commit"): `git commit -a -m "message here"`
 - or `git commit --amend` if you want to fix the last commit (and it wasn't published)
 
 Show saves ("commits"): `git log`
