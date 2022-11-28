@@ -35,6 +35,8 @@
 - Don't do: `df['col']['row'] = values`
 - Not clear if value is being put into a view or copy of df (speed implication)
 - Instead do: `df.loc[row, col] = values`
+
+
 Why?
 - `df['2020':'2022']` returns a data frame
 - `df['label']` returns a data series
