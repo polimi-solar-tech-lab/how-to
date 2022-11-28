@@ -7,7 +7,7 @@ Show saves ("commits"): `git log`
 
 Upload online: `git push origin --all`
 
-Temporarily saves current changes: `git stash`
+Temporarily save changes without committing: `git stash`
 - `git stash pop` will apply the latest stash and remove it from list
 - `git stash list` will show all stashes
 
@@ -28,6 +28,14 @@ See history: `git hist`
 
 Reference log: `git reflog`
 - Useful
+
+# Overview
+- Git helps you save and see changes to your code
+- It's complicated and has strange vocabulary, but is useful especially if you:
+  - Create a bug in your code and need to go back to the latest working version
+  - Are working on code with a team
+- Basically, you save ("commit") code, data, images, etc in a "repository" (folder which is under control by git) locallon your computer and also push ("upload") it to a server online, like GitHub.com
+- There are many fancy features like branches, but to start try to keep just a linear commit history where you only have one branch ("main") and don't do any uneccesary merging, forking, etc
 
 # GitHub
 - Compare any two commits 
