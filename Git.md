@@ -1,4 +1,24 @@
-# Cheat Sheet
+# Overview
+- Git helps you save and see changes to your code
+- It's complicated and has strange vocabulary, but is useful especially if you:
+  - Create a bug in your code and need to go back to the latest working version
+  - Are working on code with a team
+- Basically, you save ("commit") code, data, images, etc in a "repository" (folder which is under control by git) locallon your computer and also push ("upload") it to a server online, like GitHub.com
+- There are many fancy features like branches, but to start try to keep just a linear commit history where you only have one branch ("main") and don't do any uneccesary merging, forking, etc
+- You can use the command line, and my need to sometimes, but GitHub Desktop works really well
+
+# GitHub
+- Compare any two commits 
+	– github.com/woodjmichael/{repo}/compare 
+	– Choose branches from drop down menu, or..
+	– Use commit ID (long or short version) of any non-current commits
+- GitHub desktop okay but doesn't let you checkout old commits
+	– GitKracken better
+- Authentication
+	– Since 2021.9 is done by Personal Access Token (saved in lastpass) 
+	– Seems like no file that lives on local machine, just a very long password
+
+# Commands
 Save ("commit"): `git commit -a -m "message here"`
 - or `git commit --amend` if you want to fix the last commit (and it wasn't published)
 
@@ -28,28 +48,6 @@ See history: `git hist`
 
 Reference log: `git reflog`
 - Useful
-
-# Overview
-- Git helps you save and see changes to your code
-- It's complicated and has strange vocabulary, but is useful especially if you:
-  - Create a bug in your code and need to go back to the latest working version
-  - Are working on code with a team
-- Basically, you save ("commit") code, data, images, etc in a "repository" (folder which is under control by git) locallon your computer and also push ("upload") it to a server online, like GitHub.com
-- There are many fancy features like branches, but to start try to keep just a linear commit history where you only have one branch ("main") and don't do any uneccesary merging, forking, etc
-
-# GitHub
-- Compare any two commits 
-	– github.com/woodjmichael/{repo}/compare 
-	– Choose branches from drop down menu, or..
-	– Use commit ID (long or short version) of any non-current commits
-- GitHub desktop okay but doesn't let you checkout old commits
-	– GitKracken better
-- Authentication
-	– Since 2021.9 is done by Personal Access Token (saved in lastpass) 
-	– Seems like no file that lives on local machine, just a very long password
-
-## GitHub Desktop
-- Useful, use it
 
 # Git Flow
 - Cool in theory, looks hard
