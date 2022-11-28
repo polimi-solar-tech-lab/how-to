@@ -1,7 +1,7 @@
 # Cheat Sheet
 pip
 - Install package: `pip install pandas`
-- Install package version x.y.z: `pip install pandas==1.5.2`
+- Install package version: `pip install pandas==1.5.2`
 - Create requirements.txt: `pip freeze > requirements.txt`
 - Create env from requirements.txt: `pip install -r requirements.txt`
 
@@ -11,7 +11,7 @@ venv
 - Deactivate venv: `deactivate`
 
 pyenv
-- Install python x.y.z: `pyenv install 3.8.0`
+- Install python: `pyenv install 3.8.0`
 
 
 # Install Tensorflow in Virtual Environment
