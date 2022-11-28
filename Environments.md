@@ -1,7 +1,7 @@
 # Cheat Sheet
 - Install package: `pip install pandas`
-- Install package version x.y.z: `pip install pandas==x.y.z`
-- Install python x.y.z: `pyenv install x.y.z`
+- Install package version x.y.z: `pip install pandas==1.5.2`
+- Install python x.y.z: `pyenv install 3.7.9`
 - Create env: `python -m venv .venv`
 - Activate env: `.venv\scripts\actiave`
 - Deactivate: `deactivate`
