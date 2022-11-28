@@ -1,14 +1,12 @@
 # Cheat Sheet
-|What                            |Command|
-|----                            |----|
-|Install package                 |`pip install pandas`|
-|Install package version x.y.z   |`pip install pandas==x.y.z`|
-|Install python x.y.z            |`pyenv install x.y.z`|
-|Create env                      | `python -m venv .venv`|
-|Activate env                    | `.venv\scripts\actiave`|
-|Deactivate                      | `deactivate`|
-|Create requirements.txt         | `pip freeze > requirements.txt`|
-|Create env from .txt            | `pip install -r requirements.txt`|
+- Install package: `pip install pandas`
+- Install package version x.y.z: `pip install pandas==x.y.z`
+- Install python x.y.z: `pyenv install x.y.z`
+- Create env: `python -m venv .venv`
+- Activate env: `.venv\scripts\actiave`
+- Deactivate: `deactivate`
+- Create requirements.txt: `pip freeze > requirements.txt`
+- Create env from requirements.txt: `pip install -r requirements.txt`
 
 
 # Tensorflow
